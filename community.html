@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Start a Fame Track conversation about music, entertainment, fashion, or sports.">
+  <title>Community — Fame Track</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .community-note{background:#fff7e9;border:1px solid #f1dfb8;color:#614d29;padding:12px 14px;border-radius:6px;font-size:13px;margin:20px 0}
+    .topic-card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px;margin:0 0 18px}
+    .topic-card h3{font:600 22px/1.3 'Playfair Display',serif;margin:7px 0}
+    .topic-copy{color:var(--muted);white-space:pre-wrap;overflow-wrap:anywhere}
+    .topic-meta{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:12px}
+    .reply-list{border-top:1px solid var(--line);margin-top:18px;padding-top:12px}
+    .reply{padding:10px 0;border-bottom:1px solid var(--line)}
+    .reply:last-child{border-bottom:0}
+    .reply p{margin:4px 0;color:var(--ink);white-space:pre-wrap;overflow-wrap:anywhere}
+    .reply-form{display:grid;grid-template-columns:1fr auto;gap:8px;margin-top:14px}
+    .reply-form input{min-width:0;padding:10px;border:1px solid var(--line);border-radius:5px}
+    .topic-delete{border:0;background:transparent;color:var(--muted);cursor:pointer;text-decoration:underline;font-size:12px}
+    @media(max-width:520px){.reply-form{grid-template-columns:1fr}.topic-card{padding:15px}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap head-inner">
+      <a class="brand" href="index.html">FAME<span>TRACK</span></a>
+      <nav class="topnav" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="music.html">Music</a><a href="entertainment.html">Entertainment</a><a href="fashion.html">Fashion</a><a href="sports.html">Sports</a><a class="active" href="community.html">Community</a><a href="blog.html">Blog</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="page-intro">
+      <span class="eyebrow">Your turn</span>
+      <h1>Community</h1>
+      <p>Start a conversation about what’s happening in music, entertainment, fashion, or sports.</p>
+    </section>
+    <div class="community-note">Conversations are saved only in this browser right now, so other visitors cannot see them yet. Don’t post your full name, contact details, school, or where you are.</div>
+    <section class="editor" aria-labelledby="topic-heading">
+      <h2 id="topic-heading">Start a topic</h2>
+      <form id="topic-form">
+        <div class="field"><label for="topic-title">Topic</label><input id="topic-title" required maxlength="100" placeholder="What do you want to talk about?"></div>
+        <div class="field"><label for="topic-category">Section</label><select id="topic-category"><option>Any</option><option>Music</option><option>Entertainment</option><option>Fashion</option><option>Sports</option></select></div>
+        <div class="field"><label for="topic-message">Your take</label><textarea id="topic-message" required maxlength="1000" placeholder="Share your opinion or ask a question."></textarea></div>
+        <button class="btn primary" type="submit">Post topic</button>
+        <div class="status" id="community-status" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+    <section aria-labelledby="topics-heading">
+      <div class="section-head"><div><span class="eyebrow">The conversation</span><h2 id="topics-heading">Recent topics</h2></div></div>
+      <div id="topics"></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="wrap foot-inner"><a class="brand" href="index.html" style="color:white">FAME<span>TRACK</span></a><p>Independent stories and conversations on culture.<br>© <span id="year"></span> Fame Track</p></div></footer>
+  <script src="community.js"></script>
+</body>
+</html>

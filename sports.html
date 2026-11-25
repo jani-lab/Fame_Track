@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sports stories and official sports news sources from Fame Track.">
+  <title>Sports — Fame Track</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="Sports">
+  <header class="site-header">
+    <div class="wrap head-inner">
+      <a class="brand" href="index.html">FAME<span>TRACK</span></a>
+      <nav class="topnav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="music.html">Music</a>
+        <a href="entertainment.html">Entertainment</a>
+        <a href="fashion.html">Fashion</a>
+        <a class="active" href="sports.html">Sports</a><a href="community.html">Community</a><a href="blog.html">Blog</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="page-intro">
+      <span class="eyebrow">Game on</span>
+      <h1>Sports</h1>
+      <p>Big games, standout athletes and the moments fans are talking about.</p>
+    </section>
+    <section aria-labelledby="latest-sports-title">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Your sports feed</span>
+          <h2 id="latest-sports-title">Latest sports stories</h2>
+        </div>
+        <a class="btn primary" href="index.html#editor" style="text-decoration:none">Add a sports story</a>
+      </div>
+      <div class="toolbar"><input class="search" id="search" type="search" placeholder="Search sports stories…" aria-label="Search sports stories"></div>
+      <div class="grid" id="stories"></div>
+    </section>
+    <section aria-labelledby="sources-title">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Follow the action</span>
+          <h2 id="sources-title">Sports news sources</h2>
+        </div>
+      </div>
+      <p class="status">These links take you to the original publisher, where you can read the full stories.</p>
+      <div class="grid">
+        <article class="story">
+          <div class="story-visual">BBC Sport</div>
+          <div class="story-body">
+            <span class="tag">Official publisher</span>
+            <h3><a href="https://www.bbc.com/sport" target="_blank" rel="noopener noreferrer">Latest sports coverage ↗</a></h3>
+            <p>BBC Sport covers competitions and athletes around the world. Its RSS directory also lists feeds for football, cricket, tennis and other sports.</p>
+            <div class="story-foot"><a href="https://support.bbc.co.uk/platform/feeds/SportFeeds.htm" target="_blank" rel="noopener noreferrer">See BBC Sport RSS feeds ↗</a></div>
+          </div>
+        </article>
+        <article class="story">
+          <div class="story-visual">Football</div>
+          <div class="story-body">
+            <span class="tag">BBC Sport RSS</span>
+            <h3><a href="https://www.bbc.com/sport/football" target="_blank" rel="noopener noreferrer">Football ↗</a></h3>
+            <p>Explore football reporting and match coverage on BBC Sport.</p>
+            <div class="story-foot"><a href="https://newsrss.bbc.co.uk/rss/sportonline_uk_edition/football/rss.xml" target="_blank" rel="noopener noreferrer">Open the football RSS feed ↗</a></div>
+          </div>
+        </article>
+        <article class="story">
+          <div class="story-visual">More sports</div>
+          <div class="story-body">
+            <span class="tag">BBC Sport RSS</span>
+            <h3><a href="https://www.bbc.com/sport" target="_blank" rel="noopener noreferrer">Cricket, tennis and more ↗</a></h3>
+            <p>Choose a sport on BBC Sport, or browse its official RSS feed directory for cricket, tennis, athletics, golf and rugby.</p>
+            <div class="story-foot"><a href="https://support.bbc.co.uk/platform/feeds/SportFeeds.htm" target="_blank" rel="noopener noreferrer">Browse sport feeds ↗</a></div>
+          </div>
+        </article>
+      </div>
+      <p class="status">BBC’s listed feeds include UK edition feeds. Read the BBC feed terms before displaying feed content on a public or business website.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap foot-inner">
+      <a class="brand" href="index.html" style="color:white">FAME<span>TRACK</span></a>
+      <p>Independent stories on music, entertainment, style and sports.<br>© <span id="year"></span> Fame Track</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

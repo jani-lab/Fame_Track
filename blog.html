@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal stories and everyday-life blog posts from the Fame Track community.">
+  <title>Blog — Fame Track</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap head-inner">
+      <a class="brand" href="index.html">FAME<span>TRACK</span></a>
+      <nav class="topnav" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="music.html">Music</a><a href="entertainment.html">Entertainment</a><a href="fashion.html">Fashion</a><a href="sports.html">Sports</a><a href="community.html">Community</a><a class="active" href="blog.html">Blog</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="page-intro">
+      <span class="eyebrow">Life beyond the headlines</span>
+      <h1>The Blog</h1>
+      <p>Personal stories, everyday moments, hobbies, and ideas from the Fame Track community.</p>
+    </section>
+    <div class="community-note">Posts are saved only in this browser for now, so other visitors can’t see them. Keep private details private: don’t include your full name, contact information, school, or where you are.</div>
+    <section class="editor" aria-labelledby="blog-form-title">
+      <h2 id="blog-form-title">Write a post</h2>
+      <p>Share a moment, something you learned, or what you’re into lately.</p>
+      <form id="blog-form">
+        <div class="field"><label for="blog-title">Title</label><input id="blog-title" required maxlength="120" placeholder="Give your post a title"></div>
+        <div class="field"><label for="blog-category">Topic</label><select id="blog-category"><option>Everyday life</option><option>Hobbies</option><option>Creative</option><option>School</option><option>Other</option></select></div>
+        <div class="field"><label for="blog-body">Your post</label><textarea id="blog-body" required maxlength="5000" placeholder="Write your story…"></textarea></div>
+        <button class="btn primary" type="submit">Publish post</button>
+        <div class="status" id="blog-status" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+    <section aria-labelledby="blog-posts-title">
+      <div class="section-head"><div><span class="eyebrow">From the community</span><h2 id="blog-posts-title">Recent posts</h2></div></div>
+      <div id="blog-posts"></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="wrap foot-inner"><a class="brand" href="index.html" style="color:white">FAME<span>TRACK</span></a><p>Independent stories and everyday life.<br>© <span id="year"></span> Fame Track</p></div></footer>
+  <script src="blog.js"></script>
+</body>
+</html>
